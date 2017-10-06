@@ -7,7 +7,7 @@ import NewUserButton from '../components/new-user-button';
 import UserTable from '../components/user-table';
 import EditDialog from '../components/edit-dialog';
 
-export default (props) => (
+export default props => (
   <MuiThemeProvider>
     <Container md>
       <Row>

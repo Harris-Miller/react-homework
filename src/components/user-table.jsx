@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 import {
   Table,
   TableBody,
@@ -10,6 +11,12 @@ import {
 import FlatButton from 'material-ui/FlatButton';
 
 export default class UserTable extends Component {
+  static propTypes = {
+    openEditDialog: propTypes.func.isRequired,
+    removeUser: propTypes.func.isRequired,
+    users: propTypes.shape.isRequired
+  };
+
   openEditDialog(user) {
     this.props.openEditDialog(user);
   }
@@ -19,7 +26,7 @@ export default class UserTable extends Component {
   }
 
   render() {
-    const users = this.props.users;
+    const { users } = this.props;
 
     return (
       <Table

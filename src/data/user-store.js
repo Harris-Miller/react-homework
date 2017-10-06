@@ -18,17 +18,13 @@ export default class UserStore extends ReduceStore {
   reduce(state, action) {
     const copy = state.concat([]);
     let index;
-    let before;
-    let after;
 
     switch (action.type) {
       case userActionTypes.ADD_USER:
         return [...state, action.user];
       case userActionTypes.EDIT_USER:
-        console.log(copy);
-        console.log(action.user);
         index = copy.findIndex(user => user.id === action.user.id);
-        console.log(index);
+
         if (index !== -1) {
           copy[index] = action.user;
           return copy;

@@ -1927,9 +1927,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-harris@^1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-harris/-/eslint-config-harris-1.0.0-rc.2.tgz#227972c82b4675a5b69c86dd4125d28212439bfc"
+eslint-config-harris@^1.0.0-rc.4:
+  version "1.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-harris/-/eslint-config-harris-1.0.0-rc.4.tgz#634ed3e553ea8c5fb1e58b2fc3b2ace05fdbf9bb"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"

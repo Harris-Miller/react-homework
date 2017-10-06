@@ -22,5 +22,5 @@ export function removeUser(id) {
   Dispatcher.dispatch({
     type: userActionTypes.REMOVE_USER,
     id
-  })
+  });
 }

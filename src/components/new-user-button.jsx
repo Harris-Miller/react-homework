@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 import RaisedButton from 'material-ui/RaisedButton';
 
 export default class NewUserButton extends Component {
+  static propTypes = {
+    openNewDialog: propTypes.func.isRequired
+  };
+
   addUser = () => {
     this.props.openNewDialog();
   };
