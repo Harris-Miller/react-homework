@@ -16,8 +16,34 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+    rules: [
+      // {
+      //   enforce: 'pre',
+      //   test: /\.jsx?$/,
+      //   use: [
+      //     { loader: 'eslint-loader'}
+      //   ],
+      //   exclude: /node_modules/
+      // },
+      {
+        test: /\.jsx?$/,
+        use: [
+          { loader: 'babel-loader' }
+        ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader',
+            options: {
+             modules: true,
+             localIdentName: '[path][name]__[local]--[hash:base64:5]'
+            }
+          }
+        ]
+      }
     ]
   },
   resolve: {
