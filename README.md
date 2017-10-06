@@ -7,3 +7,11 @@ It represents my understanding and fluency with React and Flux
 It was always mentioned to avoid using libraries such as ImmutableJS for this example to display my understanding of side-effects and mutations as well.
 
 For visual components I choose Material UI
+
+## Running
+
+`yarn`
+
+`yarn start`
+
+localhost:8080
